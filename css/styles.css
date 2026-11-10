@@ -267,3 +267,77 @@ textarea:focus {
 .hours ul {
   padding-left: 1.25rem;
 }
+
+/* ===== Larger screens (tablet and up) ===== */
+@media (min-width: 768px) {
+
+  body {
+    font-size: 1.15rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Header: logo on the left, nav on the right */
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
+
+  .site-nav ul {
+    flex-wrap: nowrap;
+    gap: 1.75rem;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  /* Cards sit side by side and wrap if there is not enough room */
+  .product-categories,
+  .staff {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .product-categories h2,
+  .staff h2 {
+    flex: 0 0 100%;
+    margin-bottom: 0;
+  }
+
+  .product-card,
+  .staff-card {
+    flex: 1 1 280px;
+  }
+
+  /* Keep long content comfortable to read */
+  .hero-image {
+    max-width: 800px;
+  }
+
+  .signature figure,
+  .featured picture {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .request-form {
+    max-width: 700px;
+  }
+
+  video {
+    margin: 0 auto;
+  }
+}
